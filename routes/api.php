@@ -12,6 +12,8 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::apiResource('books', 'BookController');
+
 Route::post('register', 'Api\UserController@register')->name('register');
 Route::post('login', 'Api\UserController@authenticate')->name('login');
 
